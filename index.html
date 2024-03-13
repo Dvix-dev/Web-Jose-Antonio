@@ -48,30 +48,74 @@
             </a>
         </div>
         <div id="bloque-contactar">
+            <div id="formbox" style="margin-top: 6rem;" class="col-xl-8 offset-xl-2 py-5">
+                <h1 id="titulo-contacto"><b>Contrataciones</b></h1>
+                <h2 id="subtitulo-contacto">Utiliza el siguiente formulario para contactar conmigo, en breves te enviaré una respuesta</h2>
+                <form id="contact-form" method="post" action="contacto.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_nombre">Nombre *</label>
+                                    <input id="form_nombre" type="text" name="nombre" class="form-control" placeholder="Introduce tu nombre" required="required" data-error="Se requiere un nombre.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_apellido">Apellidos *</label>
+                                    <input id="form_apellido" type="text" name="apellido" class="form-control" placeholder="Introduce tus apellidos" required="required" data-error="Se requiere al menos un apellido.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Introduce tu correo *" required="required" data-error="Es necesario un correo válido.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_tipo">Especifica el tipo de mensaje *</label>
+                                    <select id="form_tipo" name="tipo" class="form-control" required="required" data-error="Por favor especifica el tipo de mensaje.">
+                                        <option value=""></option>
+                                        <option value="Consulta">Consulta</option>
+                                        <option value="Queja">Queja</option>
+                                        <option value="Sugerencia">Sugerencia</option>
+                                        <option value="Otros">Otros</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_mensaje">Mensaje *</label>
+                                    <textarea id="form_mensaje" name="mensaje" class="form-control" placeholder="Escriba su mensaje *" rows="4" required="required" data-error="No puedes dejar el mensaje vacío."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Enviar mensaje">
+                                <a href='/contacto/contactar'><input type="button" class="btn btn-success btn-send" value="Modo claro"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> Campos obligatorios, no puedes dejarlos vacíos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- /.8 -->
 
-            <form action="" method="post">
-                <thead>
-                    <tr><td style="background-color: rgb(124, 146, 212);text-align: center;font-weight: bold;" colspan="2">Rellena el siguiente formulario</td></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Usuario:</td>
-                        <td><input type="text" name="username" placeholder="Usuario" required></td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td><input style="width: 315px;" minlength="8" maxlength="20" type="password" name="password" placeholder="Password (Minimo: 8 caracteres. Máximo: 20)" required></td>
-                    </tr>
-                    <tr>
-                        <td>Nombre:</td>
-                        <td><input type="text" name="names" placeholder="Nombre y Apellidos" required></td>
-                    </tr>
-                    <tr>
-                        <td>Edad:</td>
-                        <td><input min="15" step="1" max="100" name="age" type="number" placeholder="Edad" required></td>
-                    </tr>
-                </tbody>
-            </form>
+
         </div>
     </main>
 </body>
