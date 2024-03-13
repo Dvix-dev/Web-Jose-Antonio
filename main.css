@@ -1,0 +1,57 @@
+/* By David Escutia de Haro | Dvix-dev (https://dvixweb.netlify.app/) */
+
+body {
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+div{
+    text-align: center;
+}
+
+svg {
+    display: block;
+}
+
+#div-logo-principal{
+    margin-top: 3rem;
+}
+
+#bloque-redes-sociales{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+
+/* .social-icons {
+
+} */
+
+#logo-principal{
+    width: 150px;
+}
+
+#video-youtube{
+    width: 300px;
+    height: 170px;
+}
+
+form{
+    margin-top: 2rem;
+}
